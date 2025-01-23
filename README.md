@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>Drag and Drop Form Builder</h1>
 
-Currently, two official plugins are available:
+<h2>Setup Instructions</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clone the repository:
+```
+git clone https://github.com/smriii05/Vrit_Task_C.git
+```
+- Run the following command to initialize the project:
+mkdir form-builder && cd form-builder && npm create vite@latest . -- --template react-ts
+```
+- Install node modules and dependencies by running the following command:
+```
+npm install
+npm install @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities lucide-react zod
+npm install -D @testing-library/react @testing-library/user-event vitest jsdom
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+- Run the project using:
+```
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<h2>Technologies Used</h2>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React
+- TypeScript
+- @dnd-kit/core
+- @dnd-kit/sortable
+- @dnd-kit/utilities
+- Tailwind css
+- Zod
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<h2>Rationale</h2>
+- TypeScript was used to enhance code quality, maintainability, and scalability.
+- @dnd-kit/utilities package provides helper functions and abstractions to simplify common tasks in drag-and-drop interactions, such as collision detection and measuring item placement. 
+- @dnd-kit/core library was used for implementing drag-and-drop functionality.
+- @dnd-kit/sortable library extends @dnd-kit/core by providing utilities for sorting draggable items. This was used to enable users to rearrange form components easily, ensuring a smooth and user-friendly experience.
+- Tailwind CSS was selected for styling the form builder due to its utility-first approach and flexibility. It eliminates the need for writing extensive custom CSS by providing pre-built classes that can be directly applied to elements. 
+- Zod was used for form validation, offering a robust and declarative way to define and validate schemas. It ensures that user input adheres to defined constraints, making the form builder reliable and error-free.
+
+<h2>Known limitations</h2>
+
+- Cannot edit the form components.
+- Cannot submit the form and implement response visualization.
+- Unit Testing for form logic failed.
+
+<h2>Future Improvements</h2>
+
+- Enable editing for form components.
+- Perform testing successfully.
+- Implement form response visualization.
+- Add form conditional logic.
+- Add undo/redo functionality.
+
+<h1>Demo:</h1>
+
+
+
+
