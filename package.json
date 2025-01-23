@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
@@ -30,6 +32,7 @@
     "eslint": "^9.9.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.11",
+    "gh-pages": "^6.3.0",
     "globals": "^15.9.0",
     "jsdom": "^24.0.0",
     "postcss": "^8.4.35",
@@ -38,5 +41,6 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2",
     "vitest": "^1.3.1"
-  }
+  },
+  "homepage": "https://smriii05.github.io/Vrit_Task_C/"
 }
