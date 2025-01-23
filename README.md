@@ -8,6 +8,7 @@
 git clone https://github.com/smriii05/Vrit_Task_C.git
 ```
 - Run the following command to initialize the project:
+```
 mkdir form-builder && cd form-builder && npm create vite@latest . -- --template react-ts
 ```
 - Install node modules and dependencies by running the following command:
@@ -15,9 +16,9 @@ mkdir form-builder && cd form-builder && npm create vite@latest . -- --template 
 npm install
 npm install @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities lucide-react zod
 npm install -D @testing-library/react @testing-library/user-event vitest jsdom
-
 ```
 - Run the project using:
+
 ```
 npm run dev
 ```
@@ -33,6 +34,7 @@ npm run dev
 - Zod
 
 <h2>Rationale</h2>
+
 - TypeScript was used to enhance code quality, maintainability, and scalability.
 - @dnd-kit/utilities package provides helper functions and abstractions to simplify common tasks in drag-and-drop interactions, such as collision detection and measuring item placement. 
 - @dnd-kit/core library was used for implementing drag-and-drop functionality.
