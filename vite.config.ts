@@ -7,6 +7,6 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/Vrit_Task_C/',
+  base: '/CustomForm_Builder/',
 });
 
